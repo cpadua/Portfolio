@@ -1,5 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+
+$montserrat: "Montserrat", Tahoma, sans-serif;
+
+.landing{
+	$nycjpg: url(../img/nyc.jpg);
+
+
+	background-image: $nycjpg;
+	height: 100vh;
+	margin-bottom: 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.logo{
+	display: block;
+	font-family: $montserrat;
+	color: white;
+	font-size:25px;
+}
+
 body {
     font-family: $helvetica;
 }
@@ -11,8 +36,7 @@ body {
     @include outer-container;
 }
 
-nav.navigation{
-}
+	
 
 header.navigation {
   $base-border-color: gainsboro !default;
@@ -34,7 +58,7 @@ header.navigation {
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
-  $montserrat: "Montserrat", Tahoma, sans-serif;
+  
 
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);

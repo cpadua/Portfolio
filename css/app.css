@@ -6,6 +6,21 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.landing {
+  background-image: url(../img/nyc.jpg);
+  height: 100vh;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.logo {
+  display: block;
+  font-family: "Montserrat", Tahoma, sans-serif;
+  color: white;
+  font-size: 25px; }
+
 body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
