@@ -1,0 +1,87 @@
+body {
+  background-color: #dae4ed; }
+
+head {
+  font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif; }
+
+nav {
+  font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;
+  float: center;
+  height: auto;
+  width: 900px;
+  position: relative;
+  margin: 0 auto;
+  padding: 20 20 20 20;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eeeeee, 0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eeeeee, 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  /* The third layer shadow */
+  background-color: #eee; }
+
+header {
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 36px; }
+
+#articlebox {
+  height: 300px;
+  width: 800px;
+  font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;
+  background-color: #c6d4d9;
+  padding: 20 20 20 20;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 2px 2px 3px 4px #696A6E;
+  -moz-box-shadow: 2px 2px 3px 4px #696A6E;
+  -webkit-box-shadow: 2px 2px 3px 4px #696A6E; }
+
+aside {
+  float: right;
+  height: 300px;
+  width: 150px;
+  font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;
+  background-color: #95c6f6;
+  position: relative;
+  bottom: 350px;
+  padding: 10 10 10 20;
+  right: 30px;
+  border-radius: 15px; }
+
+article h2 {
+  position: relative;
+  text-align: center;
+  font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif; }
+
+table {
+  position: relative;
+  left: 200px;
+  border-spacing: 0.5em;
+  font-family: "Trebuchet MS", Arial, sans-serif; }
+
+tr th {
+  font-size: 18px; }
+tr li {
+  list-style-type: none;
+  padding: 10px; }
+
+tr:nth-child(odd) {
+  background-color: #629fb2; }
+
+td {
+  height: 150px;
+  width: auto;
+  color: #1b097c; }
+
+footer {
+  font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;
+  height: 50px;
+  width: 500px;
+  position: relative;
+  margin: 0 auto;
+  list-style-type: none;
+  background-color: #ccc; }
+
+footer li {
+  font-family: 'Open Sans', Century Gothic, Helvetica, Arial, sans-serif;
+  height: 25px;
+  width: 500px;
+  list-style-type: none;
+  background-color: #ccc; }
