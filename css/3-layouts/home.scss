@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
 
 $montserrat: "Montserrat", Tahoma, sans-serif;
 $merriweather: "Merriweather", serif;
@@ -58,7 +58,7 @@ body {
     }
 
       strong{
-        font-weight: 400;
+        font-weight: 700;
       }
 }
 
