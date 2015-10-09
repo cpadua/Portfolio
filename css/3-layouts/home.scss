@@ -1,7 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300);
 
 $montserrat: "Montserrat", Tahoma, sans-serif;
+$merriweather: "Merriweather", serif;
+
+*{
+  margin: 0;
+  padding: 0;
+}
 
 .landing{
 	$nycjpg: url(../img/nyc.jpg);
@@ -9,6 +15,7 @@ $montserrat: "Montserrat", Tahoma, sans-serif;
 
 	background-image: $nycjpg;
 	height: 100vh;
+  background-size: cover;
 	margin-bottom: 50px;
 
 	display: flex;
@@ -16,10 +23,23 @@ $montserrat: "Montserrat", Tahoma, sans-serif;
 	justify-content: center;
 	align-items: center;
 
+  h2{
+    font-family: $montserrat;
+    font-size: 60px;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  h4{
+    font-family: $montserrat;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  }
 }
 
 body {
-    font-family: $helvetica;
+    font-family: $merriweather;
+    font-weight: 300;
 }
 
 
@@ -27,6 +47,19 @@ body {
     @include calc(width, "100% - 80px");
     @include padding(10px 20px 0px 20px);
     @include outer-container;
+    margin-bottom: 50px;
+
+    h1{
+      @include margin(0 null 10px 0);
+    }
+
+    p{
+      padding-top: 10px;
+    }
+
+      strong{
+        font-weight: 400;
+      }
 }
 
 	
