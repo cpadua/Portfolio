@@ -1,68 +1,121 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags-->
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <link rel="icon" href="favicon_ico.ico"/>
-    <title>My Resume</title>
-    <!-- Bootstrap core CSS-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- Custom styles for this template-->
-    <link href="css/css/cover.css" rel="stylesheet"/>
-    <!-- The fonts used-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat" rel="stylesheet" type="text/css"/>
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines!-->
-    <!--if lt IE 9
-    script(src='../../assets/js/ie8-responsive-file-warning.js')
-    script(src='../../assets/js/ie-emulation-modes-warning.js')
-    -->
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
-    <!--if lt IE 9
-    script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
-    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
-    
-    -->
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon_ico.ico">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <title>Portfolio</title>
+    <!-- JS Source Files go here -->
+    <script type="text/javascript" src="css/1-base/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="css/1-base/home.js"></script>
+    <script type="text/javascript" src="css/1-base/navbar.js"></script>
+    <script type="text/javascript" src="css/1-base/jquery.lint.js"></script>
   </head>
-</html>
-<body>
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-        <div class="masthead clearfix">
-          <div class="inner">
-            <h3 class="masthead-brand">Cristian Padua</h3>
-            <nav>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">My works<b class="caret">
-                      <ul class="dropdown-menu">
-                        <li>Microsoft Office</li>
-                        <li>Programming</li>
-                        <li>Hardware</li>
-                        <li>Networking</li>
-                        <li>Adobe Master Collection</li>
-                        <li>Independent Project</li>
-                      </ul></b></a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="inner cover">
-          <p>Here is the download link for my Resume           </p>
-        </div>
-      </div>
+  <body>
+    
+    
+    <header class="navigation" role="banner">
+      <div class="navigation-wrapper">
+        <a href="javascript:void(0)" class="logo">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+        </a>
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+        <nav role="navigation">
+          <ul id="js-navigation-menu" class="navigation-menu show">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="#">Resume</a></li>
+            <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+            <li class="nav-link more"><a href="javascript:void(0)">My Works</a>
+            <ul class="submenu">
+              <li><a href="javascript:void(0)">Microsoft Office</a></li>
+              <li><a href="javascript:void(0)">Hardware</a></li>
+              <li><a href="javascript:void(0)">Programming</a></li>
+              <li><a href="javascript:void(0)">Networking</a></li>
+              <li><a href="javascript:void(0)">Adobe CS6</a></li>
+              <li><a href="javascript:void(0)">Independent Project</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  <div class="landing">
+    <h2>Cristian Padua</h2>
+    <h4>My Senior Portfolio</h4>
   </div>
-  <!--
-  Bootstrap core JavaScript
-  ==================================================
-  -->
-  <!-- Placed at the end of the document so the pages load faster-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <div class="container">
+    <h3>Here is my Resume as of now. Contents will be updated as time progresses.</h3>
+    <article>
+      <section>
+        <ul>
+          <h2>Education</h2>
+          <p><b>Vinal Technical High School</b></p>
+          <p>Information Systems Technology Education</p>
+            <li>Knowledge in HTML5 and CSS3 and currently studying Java, Ruby on Rails, and Python</li>
+            <li>Basic Knowledge in using Windows Server 2012 R2</li>
+            <li>Knowledge in Adobe Premier</li>
+            <li>Microsoft Office Certified in Word, PowerPoint, Access, and Excel</li>
+            <li>Basic Knowledge in Photoshop</li>
+            <li>Have done actual production work including:</li>
+            <ul>
+              <li>Repairing Computers for Clients</li>
+              <li>Helping out individuals at the old Senior Center in Middletown off of Main Street.</li>
+              <li>Help setting the IT infrastructure in the new Middletown Senior Center in Durant Terrace by installing phones, setting up office computers, and keeping track of data ports across the facility.</li>
+            </ul>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <h2>Hobbies</h2>
+          <li>Gaming (Console and PC)</li>
+          <li>Coding</li>
+          <li>Longboarding</li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <h2>Current Studies</h2>
+          <li>Front-end Web Development</li>
+          <li>Server Management</li>
+          <li>Programming</li>
+        </ul>
+      </section>
+    </article>
+  </div>
+  <!--<div class="wrapper-for-content-outside-of-footer">
+    Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+  </div>-->
+  <footer class="footer-2" role="contentinfo">
+    <div class="footer-logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+    </div>
+    <ul>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Contact</a></li>
+      <li><a href="javascript:void(0)">Products</a></li>
+    </ul>
+    <div class="footer-secondary-links">
+      <ul>
+        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      </ul>
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+        </a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
+<!-- JS Source Files go here -->
+<script type="text/javascript" src="1-base/home.js"></script>
+<script type="text/javascript" src="1-base/navbar.js"></script>
+<script type="text/javascript" src="1-base/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="1-base/jquery.lint.js"></script>
+</html>
