@@ -24,15 +24,21 @@ body {
 
     h1{
       @include margin(0 null 10px 0);
-    }
+
 
     p{
       padding-top: 10px;
-    }
+
 
       strong{
         font-weight: 700;
       }
+    }
+
+    section{
+      padding-bottom: 10px;
+    }
+  }
 }
 
 	

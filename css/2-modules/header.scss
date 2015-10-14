@@ -30,6 +30,7 @@ header.navigation {
   width: 100%;
   z-index: 999;
   font-family: $montserrat;
+  position:fixed;
 
   .navigation-wrapper {
     @include clearfix;
