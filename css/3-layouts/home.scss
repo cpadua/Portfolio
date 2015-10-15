@@ -1,8 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
-
-$montserrat: "Montserrat", Tahoma, sans-serif;
-$merriweather: "Merriweather", serif;
 
 *{
   margin: 0;
@@ -17,28 +12,35 @@ body {
 
 
 .container {
-    @include calc(width, "100% - 80px");
-    @include padding(10px 20px 0px 20px);
+    @include padding(10px 20px 10px 20px);
     @include outer-container;
     margin-bottom: 50px;
+
 
     h1{
       @include margin(0 null 10px 0);
 
-
-    p{
-      padding-top: 10px;
-
-
-      strong{
-        font-weight: 700;
-      }
-    }
-
     section{
-      padding-bottom: 10px;
+      @include padding(10px null 10px 0);
+    
+
+      p{
+        padding-top: 10px;
+
+
+        strong{
+          font-weight: 700;
+        }
+      }
     }
   }
 }
 
+button{
+  @include button; 
+
+  a{
+    color: white;
+  }   
+}
 	
