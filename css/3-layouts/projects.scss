@@ -1,6 +1,18 @@
+
 article{
-	height: 400px;
+	height: calc(100vh - 20px);
 	max-width: 100%;
-	padding: 4em;
-	display: block;
+	@include padding(20px null 20px null);
+	@include display(flex);
+}
+
+.content{
+	@include justify-content(center);
+	@include flex-direction(column);
+	@include align-items(center);
+}
+
+iframe{
+	height: 50vh;
+	width: 50vw;
 }

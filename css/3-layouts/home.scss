@@ -1,46 +1,41 @@
-
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-
 
 body {
     font-family: $merriweather;
     font-weight: 300;
 }
 
-
 .container {
     @include padding(10px 20px 10px 20px);
+
     @include outer-container;
+
     margin-bottom: 50px;
 
+    h1 {
+        @include margin(0 null 10px 0);
 
-    h1{
-      @include margin(0 null 10px 0);
+        section {
+            @include padding(10px null 10px 0);
 
-    section{
-      @include padding(10px null 10px 0);
-    
+            p {
+                padding-top: 10px;
 
-      p{
-        padding-top: 10px;
-
-
-        strong{
-          font-weight: 700;
+                strong {
+                    font-weight: 700;
+                }
+            }
         }
-      }
     }
-  }
 }
 
-button{
-  @include button; 
+button {
+    @include button;
 
-  a{
-    color: white;
-  }   
+    a {
+        color: white;
+    }
 }
-	
