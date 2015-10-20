@@ -506,18 +506,6 @@ body {
     clear: both;
     content: "";
     display: table; }
-  .container h1 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 0; }
-    .container h1 section {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 0; }
-      .container h1 section p {
-        padding-top: 10px; }
-        .container h1 section p strong {
-          font-weight: 700; }
 
 button {
   border: 1px solid #076fe4;
@@ -549,29 +537,24 @@ button {
   button a {
     color: white; }
 
-article {
-  height: calc(100vh - 20px);
-  max-width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+article:nth-child(odd) {
+  background-color: lightsteelblue; }
+
+.list-container {
+  width: 100%; }
+  .list-container h3 {
+    padding: 20px 4em; }
+
+.content {
+  height: calc(80vh - 30px);
+  padding: 20px 4em;
   display: -webkit-box;
   display: -moz-box;
   display: box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  display: flex; }
-
-.content {
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
+  display: flex;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   box-orient: vertical;
@@ -582,6 +565,15 @@ article {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -590,10 +582,11 @@ article {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center; }
+  -ms-flex-align: center;
+  text-align: center; }
 
 iframe {
   height: 50vh;
-  width: 50vw; }
+  width: 50vmax; }
 
 /*# sourceMappingURL=app.css.map */

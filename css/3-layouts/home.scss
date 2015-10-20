@@ -15,21 +15,7 @@ body {
 
     margin-bottom: 50px;
 
-    h1 {
-        @include margin(0 null 10px 0);
-
-        section {
-            @include padding(10px null 10px 0);
-
-            p {
-                padding-top: 10px;
-
-                strong {
-                    font-weight: 700;
-                }
-            }
-        }
-    }
+    
 }
 
 button {
