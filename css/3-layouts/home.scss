@@ -14,8 +14,10 @@ body {
     @include outer-container;
 
     margin-bottom: 50px;
+}
 
-    
+section{
+    @include padding(20px null 20px 2em);
 }
 
 button {

@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="css/1-base/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="css/1-base/home.js"></script>
 		<script type="text/javascript" src="css/1-base/navbar.js"></script>
+		<script type="text/javascript" src="css/1-base/modal.js"></script>
 	</head>
 	<body>
 		<header class="navigation" role="banner">
@@ -23,12 +24,12 @@
 						<li class="nav-link"><a href="resume.html">Resume</a></li>
 						<li class="nav-link more"><a href="#">My Works</a>
 						<ul class="submenu">
-							<li><a href="#office">Microsoft Office</a></li>
-							<li><a href="#hardware">Hardware</a></li>
-							<li><a href="#programming">Programming</a></li>
-							<li><a href="#networking">Networking</a></li>
-							<li><a href="#adobe">Adobe CS6</a></li>
-							<li><a href="#project">Independent Project</a></li>
+							<li><a class="sub-link" href="#office">Microsoft Office</a></li>
+							<li><a class="sub-link" href="#hardware">Hardware</a></li>
+							<li><a class="sub-link" href="#programming">Programming</a></li>
+							<li><a class="sub-link" href="#networking">Networking</a></li>
+							<li><a class="sub-link" href="#adobe">Adobe CS6</a></li>
+							<li><a class="sub-link" href="#project">Independent Project</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -44,6 +45,24 @@
 		<article class="content" id="office">
 			<h3>Microsoft Office</h3>
 			<p>Microsoft Office is an software suite that is home to various different programs including Word, Excel, PowerPoint, Access, and Outlook. </p>
+			<p>I am certified in Word, PowerPoint, Excel, and Access. </p>
+			<div class="modal">
+				<label for="modal-1">
+					<div class="modal-trigger">Click to see my certificates.</div>
+				</label>
+				<input class="modal-state" id="modal-1" type="checkbox" />
+				<div class="modal-fade-screen">
+					<div class="modal-inner">
+						<img src="img/wordscan.jpg">
+						<br>
+						<img src="img/excelscan.jpg">
+						<br>
+						<img src="img/access_scan.jpg">
+						<br>
+						<img src="img/ppscan.jpg">
+					</div>
+				</div>
+			</div>
 		</article>
 		<article class="content" id="hardware">
 			<h3>Hardware</h3>
@@ -52,6 +71,49 @@
 		<article class="content" id="programming">
 			<h3>Programming</h3>
 			<p>Programming is the act of giving a computer a set of instructions to follow. Programming is basically <b>EVERYTHING</b> that makes software what it is. A computer would just be useless without programming.</p>
+			<p>Programming is something that has been a hobby of mine. The programming I want to specialize in is Front-end Web Developer.</p>
+			<p>Here is an example of some <strong>JQuery</strong> code I wrote for the menu bar for this site.</p>
+			<p>The code basically forces the navigation bar to become translucent after the user scrolls down the page.</p>
+			<pre>
+				$(document).ready(function() {
+				$(window).scroll(function () {
+				$(".navigation").fadeTo('fast', 0.75);
+				 });
+				});
+			</pre>
+			<p>Here is an example of the <strong>CSS</strong> I have used to create the header on my site with.</p>
+			<p>I used this code to create a full-page landing screen, which can change it's size to accomodate the size of a web browser's window.</p>
+			<pre>
+				.landing {
+				  background-image: url(../img/nyc.jpg);
+				  height: 100vh;
+				  background-size: cover;
+				  margin-bottom: 50px;
+				  display: flex;
+				  flex-direction: column;
+				  justify-content: center;
+				  align-items: center; }
+				  <p></p>
+				  .landing h2 {
+				    font-family: "Montserrat", Tahoma, sans-serif;
+				    font-size: 60px;
+				    color: aliceblue;
+				    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+				    <p></p>
+				  .landing h4 {
+				    font-family: "Montserrat", Tahoma, sans-serif;
+				    font-size: 24px;
+				    color: rgba(255, 255, 255, 0.9);
+				    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); }
+				    <p></p>
+			</pre>
+			<p>
+				I also figured out how to create a download button in <strong>HTML</strong>.
+				It's quite easier than you think. It's literally one line of code.
+			</p>
+			<pre>
+				&lt;a href="attachments/example" download="example.txt"&gt;Download Here&lt;/a&gt;
+			</pre>
 		</article>
 		<article class="content" id="networking">
 			<h3>Networking</h3>
@@ -63,7 +125,11 @@
 			<p>Adobe CS6 is a multimedia software suite. Programs in CS6 include: Photoshop for photo manipulation, Premiere for film editing, and InDesign for designing publications.</p>
 			<a href="c7/index.html">Here's another webpage I made for Adobe Premier and Sony Vegas Studio.</a>
 			<p>Here is a music video I filmed and edited.</p>
-			<iframe src="https://www.youtube.com/embed/LAKle_gS73I?rel=0" frameborder="0" allowfullscreen></iframe>
+			<div class="video">
+				<div class="video-wrapper">
+					<iframe src="https://www.youtube.com/embed/LAKle_gS73I" frameborder="0" allowfullscreen></iframe>		
+				</div>
+			</div>
 		</article>
 		<article class="content" id="project">
 			<h3>Independent Project</h3>
@@ -72,7 +138,7 @@
 		</article>
 	</div>
 	<!--<div class="wrapper-for-content-outside-of-footer">
-							Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+									Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
 	</div>-->
 	<footer class="footer-2" role="contentinfo">
 		<div class="footer-logo">

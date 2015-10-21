@@ -1,5 +1,5 @@
 
-article:nth-child(odd){
+article:nth-child(2n+1){
 	background-color: lightsteelblue;
 }
 
@@ -13,7 +13,7 @@ article:nth-child(odd){
 }
 
 .content{
-	height: calc(80vh - 30px);
+	height: calc(100vh - 20px);
 	@include padding(20px 4em 20px 4em);
 	@include display(flex);
 	@include flex-direction(column);
@@ -22,7 +22,16 @@ article:nth-child(odd){
 	text-align: center;
 }
 
-iframe{
-	height: 50vh;
-	width: 50vmax;
+.video-wrapper {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; // For ratio 16:9. 56.25%; if ratio is 4:3. 75%
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    @include position(absolute, 0px null null 0px);
+    @include size(100%);
+  }
 }

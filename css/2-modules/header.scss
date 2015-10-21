@@ -2,6 +2,7 @@
 $montserrat: "Montserrat", Tahoma, sans-serif;
 $merriweather: "Merriweather", serif;
 
+
 header.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
@@ -31,6 +32,7 @@ header.navigation {
   z-index: 999;
   font-family: $montserrat;
   position:fixed;
+  margin-bottom: 50px;
 
   .navigation-wrapper {
     @include clearfix;
