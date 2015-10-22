@@ -675,8 +675,8 @@ article:nth-child(2n+1) {
     padding: 20px 4em; }
 
 .content {
-  height: calc(100vh - 20px);
-  padding: 20px 4em;
+  width: 100vw;
+  padding: 50px 4em;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -713,25 +713,25 @@ article:nth-child(2n+1) {
   align-items: center;
   -ms-flex-align: center;
   text-align: center; }
-
-.video-wrapper {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative; }
-  .video-wrapper embed,
-  .video-wrapper object,
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%; }
+  .content p {
+    padding: 10px 0px 10px 0; }
+  .content .video-wrapper {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative; }
+    .content .video-wrapper embed,
+    .content .video-wrapper object,
+    .content .video-wrapper iframe {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%; }
 
 pre {
   display: inline-block;
   background: aliceblue;
-  width: 600px;
+  width: 40vw;
   overflow: auto;
   white-space: nowrap; }
 

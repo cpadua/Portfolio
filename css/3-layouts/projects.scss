@@ -1,37 +1,47 @@
-
-article:nth-child(2n+1){
-	background-color: lightsteelblue;
+article:nth-child(2n+1) {
+    background-color: lightsteelblue;
 }
 
-.list-container{
-	width: 100%;
+.list-container {
+    width: 100%;
 
-	h3{
-		@include padding(20px 4em 20px 4em);
-
-	}
+    h3 {
+        @include padding(20px 4em 20px 4em);
+    }
 }
 
-.content{
-	height: calc(100vh - 20px);
-	@include padding(20px 4em 20px 4em);
-	@include display(flex);
-	@include flex-direction(column);
-	@include justify-content(center);
-	@include align-items(center);
-	text-align: center;
-}
+.content {
+    width: 100vw;
 
-.video-wrapper {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%; // For ratio 16:9. 56.25%; if ratio is 4:3. 75%
-  position: relative;
+    @include padding(50px 4em 50px 4em);
 
-  embed,
-  object,
-  iframe {
-    @include position(absolute, 0px null null 0px);
-    @include size(100%);
-  }
+    @include display(flex);
+
+    @include flex-direction(column);
+
+    @include justify-content(center);
+
+    @include align-items(center);
+
+    text-align: center;
+
+    p {
+        padding: 10px 0px 10px 0;
+    }
+
+    .video-wrapper {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+
+        // For ratio 16:9. 56.25%; if ratio is 4:3. 75%
+        position: relative;
+
+        embed,
+        object,
+        iframe {
+            @include position(absolute, 0px null null 0px);
+
+            @include size(100%);
+        }
+    }
 }
