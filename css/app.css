@@ -612,6 +612,13 @@ header.navigation {
 .modal-open {
   overflow: hidden; }
 
+pre {
+  display: inline-block;
+  background: aliceblue;
+  width: 40vw;
+  overflow: auto;
+  white-space: nowrap; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -717,7 +724,6 @@ article:nth-child(2n+1) {
     padding: 10px 0px 10px 0; }
   .content .video-wrapper {
     overflow: hidden;
-    padding-bottom: 56.25%;
     position: relative; }
     .content .video-wrapper embed,
     .content .video-wrapper object,
@@ -727,12 +733,5 @@ article:nth-child(2n+1) {
       left: 0px;
       height: 100%;
       width: 100%; }
-
-pre {
-  display: inline-block;
-  background: aliceblue;
-  width: 40vw;
-  overflow: auto;
-  white-space: nowrap; }
 
 /*# sourceMappingURL=app.css.map */

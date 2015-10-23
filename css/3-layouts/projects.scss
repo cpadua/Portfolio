@@ -31,8 +31,7 @@ article:nth-child(2n+1) {
 
     .video-wrapper {
         overflow: hidden;
-        padding-bottom: 56.25%;
-
+        // Optional: Add padding-bottom if necessary
         // For ratio 16:9. 56.25%; if ratio is 4:3. 75%
         position: relative;
 
