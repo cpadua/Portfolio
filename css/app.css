@@ -615,9 +615,16 @@ header.navigation {
 pre {
   background: aliceblue;
   overflow: auto;
-  white-space: nowrap;
   width: 50vw;
-  word-wrap: normal; }
+  word-wrap: pre-wrap;
+  margin: 0 auto; }
+
+span {
+  width: 100%; }
+
+.line:nth-child(2n+1) {
+  background-color: yellow;
+  width: 100%; }
 
 * {
   margin: 0;
