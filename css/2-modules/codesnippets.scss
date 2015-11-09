@@ -2,12 +2,12 @@
 pre{
 	background: lemonchiffon;
 	overflow: auto;
-	width: 50vw;
+	width: 60vw;
 	word-wrap: pre-wrap;
 	margin: 0 auto;
 	font-size: 14px;
 	color: midnightblue;
-	@include padding(10px null 1em 10px);
+	@include padding(10px 2em 1em 10px);
 
 	border: 1px solid coral;
 	border-radius: 5px;
