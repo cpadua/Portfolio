@@ -1,20 +1,50 @@
 
 pre{
-	background: aliceblue;
+	background: white;
 	overflow: auto;
 	width: 50vw;
 	word-wrap: pre-wrap;
 	margin: 0 auto;
+	font-size: 14px;
+	@include padding(10px null 1em 10px);
+
+	border: 1px solid coral;
+	border-radius: 5px;
 }
 
-span{
-	width:100%;
-}
+
 
 .line{
+	height:24px;
 	
-	&:nth-child(2n+1){
-		background-color: yellow;
-		width:100%;
-	}
+}
+
+.function{
+	color: deepskyblue;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.selector{
+	color: DarkOrange; 
+	font-weight: 600;
+}
+
+.properties{
+	color:red;
+}
+
+.punctuation{
+	color: steelblue; 
+	font-weight: 600;
+}
+
+.quote{
+	color: crimson;
+	font-weight: 600;
+}
+
+.highlight{
+	color: OrangeRed; 
+	font-weight: 600;
 }

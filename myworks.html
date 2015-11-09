@@ -76,47 +76,47 @@
 			<p>The code basically forces the navigation bar to become translucent after the user scrolls down the page.</p>
 		</article>
 <pre>
-$(document).ready(function() {
-	$(window).scroll(function () {
-		$(".navigation").fadeTo('fast', 0.75);
-	});
-});
+<span class="punctuation">$</span><span class="punctuation">(</span><span class="highlight">document</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="highlight">ready</span><span class="punctuation">(</span><span class="function">function</span><span class="punctuation">()</span> <span class="punctuation">{</span>
+	<span class="punctuation">$</span><span class="punctuation">(</span><span class="highlight">window</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="highlight">scroll</span><span class="punctuation">(</span><span class="function">function</span> <span class="punctuation">()</span> <span class="punctuation">{</span>
+		<span class="punctuation">$</span><span class="punctuation">(</span><span class="quote">".navigation"</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="highlight">fadeTo</span><span class="punctuation">(</span><span class="quote">'fast'</span><span class="punctuation">,</span> 0.75<span class="punctuation">);</span>
+	<span class="punctuation">});</span>
+<span class="punctuation">});</span>
 </pre>
-		<article class="content" id="programming">
+		<article class="content">
 			<p>Here is an example of the <strong>CSS</strong> I have used to create the header on my site with. I used this code to create a full-page landing screen, which can change it's size to accomodate the size of a web browser's window.</p>
 		</article>
 <pre>
-<span class="line">.landing {</span>
-	<span class="line">background-image: url(../img/nyc.jpg);</span>
-	<span class="line">height: 100vh;</span>
-	<span class="line">background-size: cover;</span>
-	<span class="line">margin-bottom: 50px;</span>
-	<span class="line">display: flex;</span>
-	<span class="line">flex-direction: column;</span>
-		<span class="line">justify-content: center;</span>
-		<span class="line">align-items: center; }</span>
+<span class="line"><span class="selector"><span class="punctuation">.</span>landing</span> <span class="punctuation">{</span></span>
+	<span class="line"><span class="properties">background-image<span class="punctuation">:</span></span> url(../img/nyc.jpg)<span class="punctuation">;</span></span>
+	<span class="line"><span class="properties">height<span class="punctuation">:</span></span> 100vh<span class="punctuation">;</span>
+	<span class="line"><span class="properties">background-size<span class="punctuation">:</span></span> cover<span class="punctuation">;</span></span>
+	<span class="line"><span class="properties">margin-bottom<span class="punctuation">:</span></span> 50px<span class="punctuation">;</span></span>
+	<span class="line"><span class="properties">display<span class="punctuation">:</span></span> flex<span class="punctuation">;</span></span>
+	<span class="line"><span class="properties">flex-direction<span class="punctuation">:</span></span> column<span class="punctuation">;</span></span>
+	<span class="line"><span class="properties">justify-content<span class="punctuation">:</span></span> center<span class="punctuation">;</span></span>
+	<span class="line"><span class="properties">align-items<span class="punctuation">:</span></span> center<span class="punctuation">;</span> <span class="punctuation">}</span></span>
 		<p></p>
-		<span class="line">.landing h2 {</span>
-			<span class="line">font-family: "Montserrat", Tahoma, sans-serif;</span>
-			<span class="line">font-size: 60px;</span>
-			<span class="line">color: aliceblue;</span>
-			<span class="line">text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }</span>
+		<span class="line"><span class="selector"><span class="punctuation">.</span>landing h2</span> <span class="punctuation">{</span></span>
+			<span class="line"><span class="properties">font-family<span class="punctuation">:</span></span> "Montserrat", Tahoma, sans-serif<span class="punctuation">;</span></span>
+			<span class="line"><span class="properties">font-size<span class="punctuation">:</span></span> 60px<span class="punctuation">;</span></span>
+			<span class="line"><span class="properties">color<span class="punctuation">:</span></span> aliceblue<span class="punctuation">;</span></span>
+			<span class="line"><span class="properties">text-shadow<span class="punctuation">:</span></span> 2px 2px 2px rgba(0, 0, 0, 0.5)<span class="punctuation">;</span> <span class="punctuation">}</span></span>
 			<p></p>
-			<span class="line">.landing h4 {</span>
-				<span class="line">font-family: "Montserrat", Tahoma, sans-serif;</span>
-			    <span class="line">font-size: 24px;</span>
-			    <span class="line">color: rgba(255, 255, 255, 0.9);</span>
-			    <span class="line">text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); }</span>
+			<span class="line"><span class="selector"><span class="punctuation">.</span>landing h4</span> <span class="punctuation">{</span></span>
+			    <span class="line"><span class="properties">font-family<span class="punctuation">:</span></span> "Montserrat", Tahoma, sans-serif<span class="punctuation">;</span></span>
+			    <span class="line"><span class="properties">font-size<span class="punctuation">:</span></span> 24px<span class="punctuation">;</span></span>
+			    <span class="line"><span class="properties">color<span class="punctuation">:</span></span> rgba(255, 255, 255, 0.9)<span class="punctuation">;</span></span>
+			    <span class="line"><span class="properties">text-shadow<span class="punctuation">:</span></span> 2px 2px 4px rgba(0, 0, 0, 0.75)<span class="punctuation">;</span> <span class="punctuation">}</span></span>
 			    <p></p>
 </pre>
-		<article class="content" id="programming">
+		<article class="content">
 			<p>
 				I also figured out how to create a download button in <strong>HTML</strong>.
 				It's quite easier than you think. It's literally one line of code.
 			</p>
 		</article>
 <pre>
-	&lt;a href="attachments/example" download="example.txt"&gt;Download Here&lt;/a&gt;
+	<span class="punctuation">&lt;</span><span class="selector">a href</span><span class="punctuation">=</span><span class="quote">"attachments/example"</span> <span class="selector">download</span><span class="punctuation">=</span><span class="quote">"example.txt"</span><span class="punctuation">&gt;</span>Download Here<span class="punctuation">&lt;</span><span class="highlight">/a</span><span class="punctuation">&gt;</span>
 </pre>
 		<article class="content" id="networking">
 			<h3>Networking</h3>
