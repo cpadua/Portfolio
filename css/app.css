@@ -613,12 +613,13 @@ header.navigation {
   overflow: hidden; }
 
 pre {
-  background: white;
+  background: lemonchiffon;
   overflow: auto;
   width: 50vw;
   word-wrap: pre-wrap;
   margin: 0 auto;
   font-size: 14px;
+  color: midnightblue;
   padding-top: 10px;
   padding-bottom: 1em;
   padding-left: 10px;

@@ -1,11 +1,12 @@
 
 pre{
-	background: white;
+	background: lemonchiffon;
 	overflow: auto;
 	width: 50vw;
 	word-wrap: pre-wrap;
 	margin: 0 auto;
 	font-size: 14px;
+	color: midnightblue;
 	@include padding(10px null 1em 10px);
 
 	border: 1px solid coral;
