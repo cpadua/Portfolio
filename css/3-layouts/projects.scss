@@ -1,5 +1,6 @@
-article:nth-child(odd) {
+.content-container:nth-child(odd) {
     background-color: peachpuff;
+
 }
 
 .list-container {
@@ -8,6 +9,7 @@ article:nth-child(odd) {
     h3 {
         @include padding(20px 4em 20px 4em);
     }
+
 }
 
 .content {
@@ -44,3 +46,31 @@ article:nth-child(odd) {
         }
     }
 }
+
+#paragraph-wrapper { 
+    width: 100vw;
+
+    @include padding(50px 4em 50px 4em);
+
+    @include display(flex);
+
+    @include flex-direction(column);
+
+    @include justify-content(center);
+
+    @include align-items(center);
+
+    text-align: center;
+
+    p {
+        padding: 10px 0px 10px 0;
+    }
+}
+
+.content-container{
+    button{
+        @include button(pill, rgba(204, 202, 202, 1));
+    }
+}
+
+

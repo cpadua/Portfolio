@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>   
+	<head>
 		<title>My Works</title>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,400|Alegreya+Sans:400,500,800' rel='stylesheet' type='text/css'>
 		<link rel="icon" href="img/favicon_ico.ico">
@@ -42,39 +42,44 @@
 	</div>
 	<div class="list-container">
 		<h3>Here are various projects I have done through high school:</h3>
-		<article class="content" id="office">
-			<h3>Microsoft Office</h3>
-			<p>Microsoft Office is an software suite that is home to various different programs including Word, Excel, PowerPoint, Access, and Outlook. </p>
-			<p>I am certified in Word, PowerPoint, Excel, and Access. </p>
-			<div class="modal">
-				<label for="modal-1">
-					<div class="modal-trigger">Click to see my certificates.</div>
-				</label>
-				<input class="modal-state" id="modal-1" type="checkbox" />
-				<div class="modal-fade-screen">
-					<div class="modal-inner">
-						<img src="img/wordscan.jpg">
-						<br>
-						<img src="img/excelscan.jpg">
-						<br>
-						<img src="img/access_scan.jpg">
-						<br>
-						<img src="img/ppscan.jpg">
+		<div class="content-container">
+			<article class="content" id="office">
+				<h3>Microsoft Office</h3>
+				<p>Microsoft Office is an software suite that is home to various different programs including Word, Excel, PowerPoint, Access, and Outlook. </p>
+				<p>I am certified in Word, PowerPoint, Excel, and Access. </p>
+				<div class="modal">
+					<label for="modal-1">
+						<div class="modal-trigger">Click to see my certificates.</div>
+					</label>
+					<input class="modal-state" id="modal-1" type="checkbox" />
+					<div class="modal-fade-screen">
+						<div class="modal-inner">
+							<img src="img/wordscan.jpg">
+							<br>
+							<img src="img/excelscan.jpg">
+							<br>
+							<img src="img/access_scan.jpg">
+							<br>
+							<img src="img/ppscan.jpg">
+						</div>
 					</div>
 				</div>
-			</div>
-		</article>
-		<article class="content" id="hardware">
-			<h3>Hardware</h3>
-			<p>Hardware includes all the physical components of a computer. Hardware includes processors, RAM, graphics cards, audio cards, motherboards, mice, and keyboards.</p>
-		</article>
-		<article class="content" id="programming">
-			<h3>Programming</h3>
-			<p>Programming is the act of giving a computer a set of instructions to follow. Programming is basically <b>EVERYTHING</b> that makes software what it is. A computer would just be useless without programming.</p>
-			<p>Programming is something that has been a hobby of mine. The programming I want to specialize in is Front-end Web Developer.</p>
-			<p>Here is an example of some <strong>JQuery</strong> code I wrote for the menu bar for this site.</p>
-			<p>The code basically forces the navigation bar to become translucent after the user scrolls down the page.</p>
-		</article>
+			</article>
+		</div>
+		<div class="content-container">
+			<article class="content" id="hardware">
+				<h3>Hardware</h3>
+				<p>Hardware includes all the physical components of a computer. Hardware includes processors, RAM, graphics cards, audio cards, motherboards, mice, and keyboards.</p>
+			</article>
+		</div>
+		<div class="content-container">
+			<article class="content" id="programming">
+				<h3>Programming</h3>
+				<p>Programming is the act of giving a computer a set of instructions to follow. Programming is basically <b>EVERYTHING</b> that makes software what it is. A computer would just be useless without programming.</p>
+				<p>Programming is something that has been a hobby of mine. The programming I want to specialize in is Front-end Web Developer.</p>
+				<p>Here is an example of some <strong>JQuery</strong> code I wrote for the menu bar for this site.</p>
+				<p>The code basically forces the navigation bar to become translucent after the user scrolls down the page.</p>
+			</article>
 <pre>
 <span class="punctuation">$</span><span class="punctuation">(</span><span class="highlight">document</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="highlight">ready</span><span class="punctuation">(</span><span class="function">function</span><span class="punctuation">()</span> <span class="punctuation">{</span>
 	<span class="punctuation">$</span><span class="punctuation">(</span><span class="highlight">window</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="highlight">scroll</span><span class="punctuation">(</span><span class="function">function</span> <span class="punctuation">()</span> <span class="punctuation">{</span>
@@ -82,9 +87,9 @@
 	<span class="punctuation">});</span>
 <span class="punctuation">});</span>
 </pre>
-		<article class="content">
-			<p>Here is an example of the <strong>CSS</strong> I have used to create the header on my site with. I used this code to create a full-page landing screen, which can change it's size to accomodate the size of a web browser's window.</p>
-		</article>
+			<article id="paragraph-wrapper">
+				<p>Here is an example of the <strong>CSS</strong> I have used to create the header on my site with. I used this code to create a full-page landing screen, which can change it's size to accomodate the size of a web browser's window.</p>
+			</article>
 <pre>
 <span class="line"><span class="selector"><span class="punctuation">.</span>landing</span> <span class="punctuation">{</span></span>
 	<span class="line"><span class="properties">background-image<span class="punctuation">:</span></span> url(../img/nyc.jpg)<span class="punctuation">;</span></span>
@@ -95,49 +100,95 @@
 	<span class="line"><span class="properties">flex-direction<span class="punctuation">:</span></span> column<span class="punctuation">;</span></span>
 	<span class="line"><span class="properties">justify-content<span class="punctuation">:</span></span> center<span class="punctuation">;</span></span>
 	<span class="line"><span class="properties">align-items<span class="punctuation">:</span></span> center<span class="punctuation">;</span> <span class="punctuation">}</span></span>
+	<p></p>
+	<span class="line"><span class="selector"><span class="punctuation">.</span>landing h2</span> <span class="punctuation">{</span></span>
+		<span class="line"><span class="properties">font-family<span class="punctuation">:</span></span> "Montserrat", Tahoma, sans-serif<span class="punctuation">;</span></span>
+		<span class="line"><span class="properties">font-size<span class="punctuation">:</span></span> 60px<span class="punctuation">;</span></span>
+		<span class="line"><span class="properties">color<span class="punctuation">:</span></span> aliceblue<span class="punctuation">;</span></span>
+		<span class="line"><span class="properties">text-shadow<span class="punctuation">:</span></span> 2px 2px 2px <span class="function">rgba</span>(0, 0, 0, 0.5)<span class="punctuation">;</span> <span class="punctuation">}</span></span>
 		<p></p>
-		<span class="line"><span class="selector"><span class="punctuation">.</span>landing h2</span> <span class="punctuation">{</span></span>
-			<span class="line"><span class="properties">font-family<span class="punctuation">:</span></span> "Montserrat", Tahoma, sans-serif<span class="punctuation">;</span></span>
-			<span class="line"><span class="properties">font-size<span class="punctuation">:</span></span> 60px<span class="punctuation">;</span></span>
-			<span class="line"><span class="properties">color<span class="punctuation">:</span></span> aliceblue<span class="punctuation">;</span></span>
-			<span class="line"><span class="properties">text-shadow<span class="punctuation">:</span></span> 2px 2px 2px <span class="function">rgba</span>(0, 0, 0, 0.5)<span class="punctuation">;</span> <span class="punctuation">}</span></span>
-			<p></p>
 			<span class="line"><span class="selector"><span class="punctuation">.</span>landing h4</span> <span class="punctuation">{</span></span>
-			    <span class="line"><span class="properties">font-family<span class="punctuation">:</span></span> "Montserrat", Tahoma, sans-serif<span class="punctuation">;</span></span>
-			    <span class="line"><span class="properties">font-size<span class="punctuation">:</span></span> 24px<span class="punctuation">;</span></span>
-			    <span class="line"><span class="properties">color<span class="punctuation">:</span></span> <span class="function">rgba</span>(255, 255, 255, 0.9)<span class="punctuation">;</span></span>
-			    <span class="line"><span class="properties">text-shadow<span class="punctuation">:</span></span> 2px 2px 4px <span class="function">rgba</span>(0, 0, 0, 0.75)<span class="punctuation">;</span> <span class="punctuation">}</span></span>
-			    <p></p>
+			<span class="line"><span class="properties">font-family<span class="punctuation">:</span></span> "Montserrat", Tahoma, sans-serif<span class="punctuation">;</span></span>
+			<span class="line"><span class="properties">font-size<span class="punctuation">:</span></span> 24px<span class="punctuation">;</span></span>
+			<span class="line"><span class="properties">color<span class="punctuation">:</span></span> <span class="function">rgba</span>(255, 255, 255, 0.9)<span class="punctuation">;</span></span>
+			<span class="line"><span class="properties">text-shadow<span class="punctuation">:</span></span> 2px 2px 4px <span class="function">rgba</span>(0, 0, 0, 0.75)<span class="punctuation">;</span> <span class="punctuation">}</span></span>
+			<p></p>
 </pre>
-		<article class="content">
-			<p>
-				I also figured out how to create a download button in <strong>HTML</strong>.
-				It's quite easier than you think. It's literally one line of code.
-			</p>
-		</article>
+			<article id="paragraph-wrapper">
+				<p>
+					I also figured out how to create a download button in <strong>HTML</strong>.
+					It's quite easier than you think. It's literally one line of code.
+				</p>
+			</article>
 <pre>
 	<span class="punctuation">&lt;</span><span class="selector">a href</span><span class="punctuation">=</span><span class="quote">"attachments/example"</span> <span class="selector">download</span><span class="punctuation">=</span><span class="quote">"example.txt"</span><span class="punctuation">&gt;</span>Download Here<span class="punctuation">&lt;</span><span class="highlight">/a</span><span class="punctuation">&gt;</span>
 </pre>
-		<article class="content" id="networking">
-			<h3>Networking</h3>
-			<p>Networking allows computers to communicate with each other. One example of a network is the internet. With the internet, computers can share information with other computers all over the world. </p>
-			<a href="https://tinyurl.com/paduacserver">Here is a tutorial I did for FTP Servers and how to use Filezilla.</a>
-		</article>
-		<article class="content" id="adobe">
-			<h3>Adobe CS6</h3>
-			<p>Adobe CS6 is a multimedia software suite. Programs in CS6 include: Photoshop for photo manipulation, Premiere for film editing, and InDesign for designing publications.</p>
-			<a href="c7/index.html">Here's another webpage I made for Adobe Premier and Sony Vegas Studio.</a>
-			<p>Here is a music video I filmed and edited.</p>
-			<iframe class="video-wrapper" src="https://www.youtube.com/embed/LAKle_gS73I" frameborder="0" allowfullscreen></iframe>
-		</article>
-		<article class="content" id="project">
-			<h3>Independent Project</h3>
-			<p>My independent project for senior year is basically me just documenting what I do at my job, IT Support. As stated on my resume, I am an IT intern at Adelbrook of Cromwell, CT. My project involves me documenting every little thing I do when I am at work. </p>
-			<p>I will post more content here as time progresses.</p>
-		</article>
+			<article id="paragraph-wrapper">
+				<p>Besides doing Front-end Web Development work, I have played around with other languages.</p>
+				<p>
+					In shop I have learned about <strong>Visual Basic 6</strong> and <strong>Java</strong>.
+					Also, I have played around with <strong>Python</strong> on my spare-time.
+				</p>
+			</article>
+			<article id="paragraph-wrapper">
+				<h4>Visual Basic</h4>
+				<p>Visual Basic is a language made by Microsoft that combines GUI-based application development with an ease-of-use interface with simple easy-to-learn syntax.</p>
+				<p>The edition of Visual Basic I learned was VB6, and even though Visual Basic is no longer supported by Windows, it is still great for people who want to learn programming but do not want to step right in to the technicalites of it.</p>
+				<p>I've created various different programs in VB6, but the program I am displaying is a program that is a program to calculate your income.</p>
+				<p>The download link is here:</p>
+				<button>
+					<a href="" >Income Generator</a>
+				</button>
+			</article>
+			<article id="paragraph-wrapper">
+				<h4>Java</h4>
+				<p>Java is a programming language made by Oracle. Java is used for various applications and websites.</p>
+				<p>Java is a <strong>high-level language</strong> meaning that the language is built on an emphasis to be more comprehensive for human users while still being able to directly communincate with the computer.</p>
+				<p>Even though I do no specialize in Java, I have learned many things about how Java works such as how different types of data can affect the use of memory on a program you have created.</p>
+				<p>One thing I have to display is a simple, but yet difficult, program I made that allows Java to turn numerical values into currency values.</p>
+				<p>The download link is here:</p>
+				<button>
+					<a href="" >Currency Converter</a>
+				</button>
+			</article>
+			<article id="paragraph-wrapper">
+				<h4>Python</h4>
+				<p>Java is a programming language made by Oracle. Java is used for various applications and websites.</p>
+				<p>Java is a <strong>high-level language</strong> meaning that the language is built on an emphasis to be more comprehensive for human users while still being able to directly communincate with the computer.</p>
+				<p>Even though I do no specialize in Java, I have learned many things about how Java works such as how different types of data can affect the use of memory on a program you have created.</p>
+				<p>One thing I have to display is a simple, but yet difficult, program I made that allows Java to turn numerical values into currency values.</p>
+				<p>The download link is here:</p>
+				<button>
+					<a href="" >Currency Converter</a>
+				</button>
+			</article>
+		</div>
+		<div class="content-container">
+			<article class="content" id="networking">
+				<h3>Networking</h3>
+				<p>Networking allows computers to communicate with each other. One example of a network is the internet. With the internet, computers can share information with other computers all over the world. </p>
+				<a href="https://tinyurl.com/paduacserver">Here is a tutorial I did for FTP Servers and how to use Filezilla.</a>
+			</article>
+		</div>
+		<div class="content-container">
+			<article class="content" id="adobe">
+				<h3>Adobe CS6</h3>
+				<p>Adobe CS6 is a multimedia software suite. Programs in CS6 include: Photoshop for photo manipulation, Premiere for film editing, and InDesign for designing publications.</p>
+				<a href="c7/index.html">Here's another webpage I made for Adobe Premier and Sony Vegas Studio.</a>
+				<p>Here is a music video I filmed and edited.</p>
+				<iframe class="video-wrapper" src="https://www.youtube.com/embed/LAKle_gS73I" frameborder="0" allowfullscreen></iframe>
+			</article>
+		</div>
+		<div class="content-container">
+			<article class="content" id="project">
+				<h3>Independent Project</h3>
+				<p>My independent project for senior year is basically me just documenting what I do at my job, IT Support. As stated on my resume, I am an IT intern at Adelbrook of Cromwell, CT. My project involves me documenting every little thing I do when I am at work. </p>
+				<p>I will post more content here as time progresses.</p>
+			</article>
+		</div>
 	</div>
 	<!--<div class="wrapper-for-content-outside-of-footer">
-										Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+											Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
 	</div>-->
 	<footer class="footer-2" role="contentinfo">
 		<div class="footer-logo">
