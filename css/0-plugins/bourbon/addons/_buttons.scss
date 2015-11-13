@@ -48,7 +48,7 @@
 ///
 /// @todo Remove double assigned variables (Lines 59–62) in v5.0.0
 
-$buttons-list: 'button',
+/* $buttons-list: '.bourbon-button',
                'input[type="button"]',
                'input[type="reset"]',
                'input[type="submit"]';
@@ -61,4 +61,4 @@ $all-buttons-hover:  assign-inputs($buttons-list, hover);
 $all-button-inputs:        $all-buttons;
 $all-button-inputs-active: $all-buttons-active;
 $all-button-inputs-focus:  $all-buttons-focus;
-$all-button-inputs-hover:  $all-buttons-hover;
+$all-button-inputs-hover:  $all-buttons-hover; */

@@ -29,6 +29,7 @@
 
     p {
         padding: 10px 0px 10px 0;
+        font-size: 12px;
     }
 
     .video-wrapper {
@@ -67,10 +68,12 @@
     }
 }
 
-.content-container{
-    button{
-        @include button(pill, rgba(204, 202, 202, 1));
+button{
+
+    span{
+        color:black;
     }
 }
+
 
 
