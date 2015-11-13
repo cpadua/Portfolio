@@ -2,7 +2,7 @@
 pre{
 	background: lemonchiffon;
 	overflow: auto;
-	width: 60vw;
+	width: 70vw;
 	word-wrap: pre-wrap;
 	margin: 0 auto;
 	font-size: 14px;
@@ -13,7 +13,9 @@ pre{
 	border-radius: 5px;
 }
 
-
+.comment{
+	color: gray;
+}
 
 .line{
 	height:24px;

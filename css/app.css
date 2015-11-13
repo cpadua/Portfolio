@@ -2521,7 +2521,7 @@ header.navigation {
 pre {
   background: lemonchiffon;
   overflow: auto;
-  width: 60vw;
+  width: 70vw;
   word-wrap: pre-wrap;
   margin: 0 auto;
   font-size: 14px;
@@ -2529,6 +2529,9 @@ pre {
   padding: 10px 2em 1em 10px;
   border: 1px solid coral;
   border-radius: 5px; }
+
+.comment {
+  color: gray; }
 
 .line {
   height: 24px; }
@@ -2565,8 +2568,6 @@ body {
   font-family: "Merriweather", serif;
   font-weight: 300;
   background-color: ivory; }
-  body p {
-    font-size: 1em; }
 
 .resume-container {
   max-width: 68em;
@@ -2590,6 +2591,8 @@ section {
   width: 100%; }
   .list-container h3 {
     padding: 20px 4em; }
+  .list-container p {
+    font-size: 1em; }
 
 .content {
   width: 100vw;
@@ -2630,8 +2633,6 @@ section {
   align-items: center;
   -ms-flex-align: center;
   text-align: center; }
-  .content p {
-    font-size: 1em; }
   .content .video-wrapper {
     overflow: hidden;
     position: relative; }

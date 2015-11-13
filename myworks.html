@@ -145,21 +145,102 @@
 				<p>Java is a programming language made by Oracle. Java is used for various applications and websites.</p>
 				<p>Java is a <strong>high-level language</strong> meaning that the language is built on an emphasis to be more comprehensive for human users while still being able to directly communincate with the computer.</p>
 				<p>Even though I do no specialize in Java, I have learned many things about how Java works such as how different types of data can affect the use of memory on a program you have created.</p>
-				<p>One thing I have to display is a simple, but yet difficult, program I made that allows Java to turn numerical values into currency values.</p>
-				<p>The download link is here:</p>
-				<button class="button button--ujarak button--border-thick  button--size-s button--inverted button--text-thick">
-					<a href="" ><span>Currency Converter</span></a>
-				</button>
+				<p>One thing I would like to display is some simple code demonstrating how to use Java to calculate your annual pay.</p>
 			</article>
+<pre>
+<span class="highlight">package</span> currencyformat<span class="punctuation">;</span>
+
+<span class="comment">/**
+ * This program demonstrates how to use the System.out.printf
+ * method to format a number as currency. 
+ */</span>
+<span class="highlight">public</span> <span class="highlight">class</span> CurrencyFormat <span class="punctuation">{</span>
+
+    <span class="highlight">public static void</span> main<span class="punctuation">(</span>String<span class="punctuation">[]</span> args<span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="properties">double</span> monthlyPay <span class="punctuation">=</span> 5000<span class="punctuation">.</span>0<span class="punctuation">;</span>
+        <span class="properties">double</span> annualPay <span class="punctuation">=</span> monthlyPay <span class="punctuation">*</span> 12<span class="punctuation">;</span>
+        <span class="properties">System</span><span class="punctuation">.</span><span class="properties">out</span>.<span class="properties">printf</span><span class="punctuation">(</span><span class="quote">"Your annual pay is <span class="punctuation">$%,.</span>2f<span class="punctuation">\</span>n"</span><span class="punctuation">,</span> annualPay<span class="punctuation">);</span>
+    <span class="punctuation">}</span>
+    
+<span class="punctuation">}</span>
+
+</pre>	
 			<article id="paragraph-wrapper">
 				<h4>Python</h4>
-				<p>Java is a programming language made by Oracle. Java is used for various applications and websites.</p>
-				<p>Java is a <strong>high-level language</strong> meaning that the language is built on an emphasis to be more comprehensive for human users while still being able to directly communincate with the computer.</p>
-				<p>Even though I do no specialize in Java, I have learned many things about how Java works such as how different types of data can affect the use of memory on a program you have created.</p>
-				<p>One thing I have to display is a simple, but yet difficult, program I made that allows Java to turn numerical values into currency values.</p>
-				<p>The download link is here:</p>
-				
+				<p>Python is a multi-purpose language that can be used for anything ranging from applications to text editors to games and back-end web development.</p>
+				<p>Python is a <strong>very high-level language</strong> meaning that the language has more of an emphasis on being closer to communicating with human language than that of a high level language like Java or C.</p>
+				<p>Python was a fun language to learn as I taught myself the language out of sheer boredom. I really like the emphasis on making an easy-to-read syntax.</p>
+				<p>I made a bunch of different projects with python but one I want to show is a text-based RPG I made.</p>
+				<p>This game is based off of the Simpsons and I would to show the source for the file.</p>
+				<p>If you have a Mac or Linux, then your can </p>	
 			</article>
+<pre>
+<span class="highlight">def</span> gameover<span class="punctuation">():</span>
+	<span class="highlight">print</span> <span class="quote">"Game OVER!"</span>
+
+<span class="highlight">def</span> youWin<span class="punctuation">():</span>
+	<span class="highlight">print</span> <span class="quote">"You win."</span>
+
+<span class="highlight">print</span> <span class="quote">"You're in the Simpsons house and Sideshow Bob has taken control of Krusty's mind and is trying to kill Bart, what do you do?"</span>
+
+<span class="highlight">print</span> <span class="quote">"1. Attack"</span>
+<span class="highlight">print</span> <span class="quote">"2. Magic"</span>
+<span class="highlight">print</span> <span class="quote">"3. Call Homer"</span>
+<span class="highlight">print</span> <span class="quote">"4. Run"</span>
+
+hero <span class="punctuation">=</span> <span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"> "</span><span class="punctuation">)</span>
+
+<span class="highlight">if</span> hero <span class="punctuation">==</span> <span class="quote">"1"</span><span class="punctuation">:</span>
+	<span class="highlight">print</span> <span class="quote">"1. Smack with skateboard."</span>
+	<span class="highlight">print</span> <span class="quote">"2. Call Chief Wiggum."</span>
+	<span class="highlight">print</span> <span class="quote">"3. Get Milhouse"</span>
+	<span class="highlight">print</span> <span class="quote">"4. Throw Homer's donut at Krusty's face."</span>
+
+	hit <span class="punctuation">=</span> <span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"> "</span><span class="punctuation">)</span>
+
+	<span class="highlight">if</span> hit <span class="punctuation">==</span> <span class="quote">"1"</span><span class="punctuation">:</span> 
+		<span class="highlight">print</span> <span class="quote">"Direct hit, but Krusty dies and Sideshow Mel sues the Simpsons while Bart is in prison."</span>
+		youWin<span class="punctuation">()</span>
+		<span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"Press ENTER to close."</span><span class="punctuation">)</span>
+	<span class="highlight">elif</span> hit == "2"<span class="punctuation">:</span> 
+		<span class="highlight">print</span> <span class="quote">"The mind-controlled Krusty kills Bart due to Chief Wiggum sleeping on the job and never showing up."</span>
+		gameover<span class="punctuation">()</span>
+		<span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"Press ENTER to close."</span><span class="punctuation">)</span>
+	<span class="highlight">elif</span> hit <span class="punctuation">==</span> <span class="quote">"3"</span><span class="punctuation">:</span>
+		<span class="highlight">print</span> <span class="quote">"Krusty knocks Milhouse in the head with a baseball bat./ Milhouse is unconscious."</span>
+		<span class="highlight">print</span> <span class="quote">"Bart tries to run away and he ends up in Lisa's room. Sideshow Bob appears behind him and kills him."</span>
+		gameover<span class="punctuation">()</span>
+		<span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"Press ENTER to close."</span><span class="punctuation">)</span>
+	<span class="highlight">else</span><span class="punctuation">:</span>
+		<span class="highlight">print</span> <span class="quote">"Bart throws donut at Krusty's face and Krusty snaps back to his normal self."</span>
+		youWin<span class="punctuation">()</span>
+		<span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"Press ENTER to close."</span><span class="punctuation">)</span>
+
+<span class="highlight">elif</span> hero <span class="punctuation">==</span> <span class="quote">"2"</span><span class="punctuation">:</span>
+	<span class="highlight">print</span> <span class="quote">"Bart uses Generic Final Fantasy Spell Attack."</span>
+	<span class="highlight">print</span> <span class="quote">"Krusty can't handle such a long franchise that never ends. Krusty takes ALL the damage."</span>
+	youWin<span class="punctuation">()</span>
+	<span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"Press ENTER to close."</span><span class="punctuation">)</span>
+	
+<span class="highlight">elif</span> hero == <span class="quote">"3"</span><span class="punctuation">:</span> 
+	<span class="highlight">print</span> <span class="quote">"'Bart!! Gimme back my donut!!'"</span>
+	<span class="highlight">print</span> <span class="quote">"'Wait up, Homer.'"</span>
+	<span class="highlight">print</span> <span class="quote">"'GIVE IT TO ME NOW!!' Homer chokes Bart."</span>
+	<span class="highlight">print</span> <span class="quote">"Krusty tackles Homer."</span>
+	<span class="highlight">print</span> <span class="quote">"'D\'OH!!!!!!!!!!!'"</span>
+	gameover<span class="punctuation">()</span>
+	<span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"Press ENTER to close."</span><span class="punctuation">)</span>
+
+<span class="highlight">elif</span> hero == <span class="quote">"4"</span>:
+	<span class="highlight">print</span> <span class="quote">"Bart runs away but gets made fun of by Nelson for doing so."</span>
+	<span class="highlight">print</span> <span class="quote">"Nelson: HAW HAW!! You ran away from a clown who's trying to kill you."</span>
+	gameover<span class="punctuation">()</span>
+	<span class="function">raw_input</span><span class="punctuation">(</span><span class="quote">"Press ENTER to close."</span><span class="punctuation">)</span>
+
+<span class="highlight">else</span>:
+	<span class="highlight">print</span> <span class="quote">"Good Luck Bart."</span>
+</pre>
+		<article id="paragraph-wrapper"></article>
 		</div>
 		<div class="content-container">
 			<article class="content" id="networking">

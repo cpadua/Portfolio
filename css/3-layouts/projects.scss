@@ -9,6 +9,12 @@
     h3 {
         @include padding(20px 4em 20px 4em);
     }
+
+
+    p{
+        font-size: 1em;
+    }
+
 }
 
 .content {
@@ -25,10 +31,6 @@
     @include align-items(center);
 
     text-align: center;
-
-    p{
-        font-size: 1em;
-    }
 
     .video-wrapper {
         overflow: hidden;
