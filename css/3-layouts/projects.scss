@@ -9,7 +9,6 @@
     h3 {
         @include padding(20px 4em 20px 4em);
     }
-
 }
 
 .content {
@@ -29,7 +28,6 @@
 
     p {
         padding: 10px 0px 10px 0;
-        font-size: 12px;
     }
 
     .video-wrapper {
@@ -46,6 +44,10 @@
             @include size(100%);
         }
     }
+}
+
+.content-container{
+    font-size: 14px;
 }
 
 #paragraph-wrapper { 
