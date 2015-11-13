@@ -2565,6 +2565,8 @@ body {
   font-family: "Merriweather", serif;
   font-weight: 300;
   background-color: ivory; }
+  body p {
+    font-size: 1em; }
 
 .resume-container {
   max-width: 68em;
@@ -2629,7 +2631,7 @@ section {
   -ms-flex-align: center;
   text-align: center; }
   .content p {
-    padding: 10px 0px 10px 0; }
+    font-size: 1em; }
   .content .video-wrapper {
     overflow: hidden;
     position: relative; }
@@ -2641,9 +2643,6 @@ section {
       left: 0px;
       height: 100%;
       width: 100%; }
-
-.content-container {
-  font-size: 14px; }
 
 #paragraph-wrapper {
   width: 100vw;
