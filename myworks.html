@@ -42,6 +42,7 @@
 	</div>
 	<div class="list-container">
 		<h3>Here are various projects I have done through high school:</h3>
+		<!-- Office Section -->
 		<div class="content-container">
 			<article class="content" id="office">
 				<h3>Microsoft Office</h3>
@@ -64,14 +65,67 @@
 						</div>
 					</div>
 				</div>
+				<p>You can make various things with Microsoft Office including research papers, data tables and graphs, databases, presentations and so much more.</p>
+				<p>In Microsoft Word, I made a menu for our culinary shop's restaurant. In the document, I did some formatting using the Paragraph menu and the Design tab.</p>
+				<div class="modal">
+					<label for="modal-2">
+						<div class="modal-trigger">Click to see this menu</div>
+					</label>
+					<input class="modal-state" id="modal-2" type="checkbox" />
+					<div class="modal-fade-screen">
+						<div class="modal-inner">
+							<img src="img/Wordmenu.png">
+							<br>
+							<button class="button button--ujarak button--border-thick button--size-s button--inverted button--text-thick">
+								<a href="attachments/menu.docx" download="menu.docx"><span>Menu</span></a>
+							</button>
+						</div>
+					</div>
+				</div>
+				<p>During freshman year, I was a big Metallica fan (I still am. At least with old Metallica). Anyway, we had to make an uber technical power point, with embedded browsers, sound clips and insane transition effects. Basically this PowerPoint is a presentation used to persuade people that St. Anger is their "best album ever".</p>
+				<div class="modal">
+					<label for="modal-3">
+						<div class="modal-trigger">Enjoy this atrocity.</div>
+					</label>
+					<input class="modal-state" id="modal-3" type="checkbox" />
+					<div class="modal-fade-screen">
+						<div class="modal-inner">
+							<img src="img/stanger/slide1.jpg">
+							<br>
+							<img src="img/stanger/slide2.jpg">
+							<br>
+							<img src="img/stanger/slide3.jpg">
+							<br>
+							<img src="img/stanger/slide4.jpg">
+							<br>
+							<img src="img/stanger/slide5.jpg">
+							<br>
+							<img src="img/stanger/slide6.jpg">
+							<br>
+							<img src="img/stanger/slide7.jpg">
+							<br>
+							<img src="img/stanger/slide8.jpg">
+							<br>
+							<img src="img/stanger/slide9.jpg">
+							<br>
+							<img src="img/stanger/slide10.jpg">
+							<br>
+							<button class="button button--ujarak button--border-thick button--size-s button--inverted button--text-thick">
+								<a href="attachments/stanger.pptm" download="stanger.pptm"><span>The actual presentation.</span></a>
+							</button>
+						</div>
+					</div>
+				</div>
 			</article>
 		</div>
+		<!-- Hardware Section -->
 		<div class="content-container">
 			<article class="content" id="hardware">
 				<h3>Hardware</h3>
 				<p>Hardware includes all the physical components of a computer. Hardware includes processors, RAM, graphics cards, audio cards, motherboards, mice, and keyboards.</p>
 			</article>
 		</div>
+		<!-- Programming Section -->
 		<div class="content-container">
 			<article class="content" id="programming">
 				<h3>Programming</h3>
@@ -80,6 +134,7 @@
 				<p>Here is an example of some <strong>JQuery</strong> code I wrote for the menu bar for this site.</p>
 				<p>The code basically forces the navigation bar to become translucent after the user scrolls down the page.</p>
 			</article>
+<!--<pre> tags here-->
 <pre>
 <span class="punctuation">$</span><span class="punctuation">(</span><span class="highlight">document</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="highlight">ready</span><span class="punctuation">(</span><span class="function">function</span><span class="punctuation">()</span> <span class="punctuation">{</span>
 	<span class="punctuation">$</span><span class="punctuation">(</span><span class="highlight">window</span><span class="punctuation">)</span><span class="punctuation">.</span><span class="highlight">scroll</span><span class="punctuation">(</span><span class="function">function</span> <span class="punctuation">()</span> <span class="punctuation">{</span>
@@ -90,6 +145,7 @@
 			<article id="paragraph-wrapper">
 				<p>Here is an example of the <strong>CSS</strong> I have used to create the header on my site with. I used this code to create a full-page landing screen, which can change it's size to accomodate the size of a web browser's window.</p>
 			</article>
+<!--<pre> tags here-->
 <pre>
 <span class="line"><span class="selector"><span class="punctuation">.</span>landing</span> <span class="punctuation">{</span></span>
 	<span class="line"><span class="properties">background-image<span class="punctuation">:</span></span> url(../img/nyc.jpg)<span class="punctuation">;</span></span>
@@ -120,6 +176,7 @@
 					It's quite easier than you think. It's literally one line of code.
 				</p>
 			</article>
+<!--<pre> tags here-->
 <pre>
 	<span class="punctuation">&lt;</span><span class="selector">a href</span><span class="punctuation">=</span><span class="quote">"attachments/example"</span> <span class="selector">download</span><span class="punctuation">=</span><span class="quote">"example.txt"</span><span class="punctuation">&gt;</span>Download Here<span class="punctuation">&lt;</span><span class="highlight">/a</span><span class="punctuation">&gt;</span>
 </pre>
@@ -147,6 +204,7 @@
 				<p>Even though I do no specialize in Java, I have learned many things about how Java works such as how different types of data can affect the use of memory on a program you have created.</p>
 				<p>One thing I would like to display is some simple code demonstrating how to use Java to calculate your annual pay.</p>
 			</article>
+<!--More <pre> tags -->
 <pre>
 <span class="highlight">package</span> currencyformat<span class="punctuation">;</span>
 
@@ -174,6 +232,7 @@
 				<p>This game is based off of the Simpsons and I would to show the source for the file.</p>
 				<p>If you have a Mac or Linux, then your can </p>	
 			</article>
+<!-- EVEN More <pre> tags!!! -->
 <pre>
 <span class="highlight">def</span> gameover<span class="punctuation">():</span>
 	<span class="highlight">print</span> <span class="quote">"Game OVER!"</span>
@@ -240,8 +299,16 @@ hero <span class="punctuation">=</span> <span class="function">raw_input</span><
 <span class="highlight">else</span>:
 	<span class="highlight">print</span> <span class="quote">"Good Luck Bart."</span>
 </pre>
-		<article id="paragraph-wrapper"></article>
+		<article id="paragraph-wrapper">
+			<p>Due to this game being made on Python. Creating a simple executable file for this program has been proven difficult for the time being.</p>
+			<p>If you are using a Mac, you can go to <strong>Finder</strong> and in the <strong>Utilities</strong> folder, click on <strong>Terminal</strong>.</p>
+			<p>From there, type in:</p>
+			<code>python simpsonsrpg.py</code>
+			<p>If you are using Windows, you can download Python 2.7 <a href="https://www.python.org/downloads/">here</a>.</p>
+			<p>From there, go to the start menu and you can run my program with <strong>IDLE.</strong>.</p>
+		</article>
 		</div>
+		<!-- Networking Section -->
 		<div class="content-container">
 			<article class="content" id="networking">
 				<h3>Networking</h3>
@@ -249,6 +316,7 @@ hero <span class="punctuation">=</span> <span class="function">raw_input</span><
 				<a href="https://tinyurl.com/paduacserver">Here is a tutorial I did for FTP Servers and how to use Filezilla.</a>
 			</article>
 		</div>
+		<!-- Adobe Section -->
 		<div class="content-container">
 			<article class="content" id="adobe">
 				<h3>Adobe CS6</h3>
@@ -258,6 +326,7 @@ hero <span class="punctuation">=</span> <span class="function">raw_input</span><
 				<iframe class="video-wrapper" src="https://www.youtube.com/embed/LAKle_gS73I" frameborder="0" allowfullscreen></iframe>
 			</article>
 		</div>
+		<!-- Project Section -->
 		<div class="content-container">
 			<article class="content" id="project">
 				<h3>Independent Project</h3>

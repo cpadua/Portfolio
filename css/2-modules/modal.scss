@@ -50,6 +50,7 @@
       padding-top: 10em;
     }
 
+
     .modal-bg {
       @include position(absolute, 0);
       cursor: pointer;
@@ -88,12 +89,13 @@
     background: $modal-background;
     border-radius: $base-border-radius;
     margin-top: 0;
-    margin: auto;
+    margin: 0 auto;
     max-height: 95%;
     overflow: auto;
     padding: $modal-padding / 2;
     position: relative;
     width: 95%;
+
 
     @include media($medium-screen) {
       max-height: 70%;
@@ -154,5 +156,7 @@
 .modal-open {
   overflow: hidden;
 }
+
+
 
 // Based on code by Kasper Mikiewicz
