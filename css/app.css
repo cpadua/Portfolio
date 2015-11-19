@@ -2566,6 +2566,11 @@ code {
   color: OrangeRed;
   font-weight: 600; }
 
+.listing .parent {
+  margin: 10px; }
+  .listing .parent .child {
+    margin: 10px; }
+
 * {
   margin: 0;
   padding: 0; }
