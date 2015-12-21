@@ -19,7 +19,6 @@
 .content {
     width: 100vw;
 
-    @include padding(50px 4em 50px 4em);
 
     @include display(flex);
 
@@ -31,6 +30,10 @@
 
     text-align: center;
 
+    .p-box{
+        padding: 0;
+
+    }
     .video-wrapper {
         overflow: hidden;
         // Optional: Add padding-bottom if necessary
