@@ -30,10 +30,6 @@
 
     text-align: center;
 
-    .p-box{
-        padding: 0;
-
-    }
     .video-wrapper {
         overflow: hidden;
         // Optional: Add padding-bottom if necessary
@@ -50,7 +46,21 @@
     }
 }
 
+.p-box{
+    width: 100vw;
 
+    @include padding(25px 4em 25px 4em);
+
+    @include display(flex);
+
+    @include flex-direction(column);
+
+    @include justify-content(center);
+
+    @include align-items(center);
+
+    text-align: center;
+}
 
 #paragraph-wrapper { 
     width: 100vw;
