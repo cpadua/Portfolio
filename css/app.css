@@ -2643,8 +2643,6 @@ section {
   align-items: center;
   -ms-flex-align: center;
   text-align: center; }
-  .content .p-box {
-    padding: 0; }
   .content .video-wrapper {
     overflow: hidden;
     position: relative; }
@@ -2656,6 +2654,46 @@ section {
       left: 0px;
       height: 100%;
       width: 100%; }
+
+.p-box {
+  width: 100vw;
+  padding: 25px 4em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  text-align: center; }
 
 #paragraph-wrapper {
   width: 100vw;
