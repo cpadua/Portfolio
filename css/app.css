@@ -2571,6 +2571,13 @@ code {
   .listing .parent .child {
     margin: 10px; }
 
+video {
+  height: 75%;
+  width: 75%; }
+
+h4 {
+  padding-top: 2em; }
+
 * {
   margin: 0;
   padding: 0; }
